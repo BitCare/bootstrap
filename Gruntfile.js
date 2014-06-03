@@ -179,6 +179,21 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>-bitcare.css': 'less/bootstrap.less'
         }
       },
+      compileHumanwave: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          modifyVars: {
+            brand: '-humanwave'
+          },
+          sourceMapURL: '<%= pkg.name %>.css.map',
+          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
+        },
+        files: {
+          'dist/css/<%= pkg.name %>-humanwave.css': 'less/bootstrap.less'
+        }
+      },
       compileTheme: {
         options: {
           strictMath: true,
@@ -250,6 +265,7 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
           'dist/css/<%= pkg.name %>-theme.min.css': 'dist/css/<%= pkg.name %>-theme.css',
           'dist/css/<%= pkg.name %>-bitcare.min.css': 'dist/css/<%= pkg.name %>-bitcare.css',
+          'dist/css/<%= pkg.name %>-humanwave.min.css': 'dist/css/<%= pkg.name %>-humanwave.css',
         }
       },
       docs: {
@@ -448,7 +464,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileBitcare', 'less:compileTheme']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileBitcare', 'less:compileHumanwave', 'less:compileTheme']);
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer', 'usebanner', 'csscomb', 'cssmin']);
 
   // Docs distribution task.
