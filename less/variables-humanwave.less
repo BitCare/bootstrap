@@ -13,8 +13,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:          #f2f2f2;  // lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #a68502;
-@brand-secondary:		#595451;
+@brand-primary:         #595451;
 @brand-success:         #689d33;
 @brand-info:            #ffd700;
 @brand-warning:         #ff6600;
@@ -31,7 +30,7 @@
 @text-color:            @gray-dark;
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            #a68502;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 
@@ -105,9 +104,9 @@
 @border-radius-small:       1px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    #433f3d;
 //** Global background color for active items (e.g., navs or dropdowns).
-@component-active-bg:       @brand-primary;
+@component-active-bg:       #fad64c;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          4px;
@@ -140,15 +139,15 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-@btn-font-weight:                normal;
+@btn-font-weight:                bold;
 
 @btn-default-color:              @gray-dark;
 @btn-default-bg:                 @gray-lighter;
 @btn-default-border:             darken(@btn-default-bg, 5%);;
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-color:              @component-active-color;
+@btn-primary-bg:                 @component-active-bg;
+@btn-primary-border:             darken(@btn-primary-bg, 10%);
 
 @btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
@@ -339,12 +338,12 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @gray-dark;
-@navbar-default-bg:                @brand-secondary;
+@navbar-default-color:             #fff;
+@navbar-default-bg:                @brand-primary;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                @gray-dark;
+@navbar-default-link-color:                #fff;
 @navbar-default-link-hover-color:          darken(@navbar-default-link-color, 10%);
 @navbar-default-link-hover-bg:             transparent;
 @navbar-default-link-active-color:         @navbar-default-link-color;
