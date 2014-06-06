@@ -164,36 +164,6 @@ module.exports = function (grunt) {
           'dist/css/<%= pkg.name %>.css': 'less/bootstrap.less'
         }
       },
-      compileBitcare: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          modifyVars: {
-            brand: '-bitcare'
-          },
-          sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
-        },
-        files: {
-          'dist/css/<%= pkg.name %>-bitcare.css': 'less/bootstrap.less'
-        }
-      },
-      compileHumanwave: {
-        options: {
-          strictMath: true,
-          sourceMap: true,
-          outputSourceFiles: true,
-          modifyVars: {
-            brand: '-humanwave'
-          },
-          sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
-        },
-        files: {
-          'dist/css/<%= pkg.name %>-humanwave.css': 'less/bootstrap.less'
-        }
-      },
       compileTheme: {
         options: {
           strictMath: true,
@@ -204,6 +174,32 @@ module.exports = function (grunt) {
         },
         files: {
           'dist/css/<%= pkg.name %>-theme.css': 'less/theme.less'
+        }
+      },
+      compileBitcare: {
+        options: {
+          strictMath: true,
+          sourceMap: false,
+          outputSourceFiles: true,
+          modifyVars: {
+            brand: '-bitcare'
+          }
+        },
+        files: {
+          'dist/bitcare/<%= pkg.name %>.css': 'less/bootstrap.less'
+        }
+      },
+      compileHumanwave: {
+        options: {
+          strictMath: true,
+          sourceMap: false,
+          outputSourceFiles: true,
+          modifyVars: {
+            brand: '-humanwave'
+          }
+        },
+        files: {
+          'dist/humanwave/<%= pkg.name %>.css': 'less/bootstrap.less'
         }
       }
     },
@@ -264,8 +260,8 @@ module.exports = function (grunt) {
         files: {
           'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
           'dist/css/<%= pkg.name %>-theme.min.css': 'dist/css/<%= pkg.name %>-theme.css',
-          'dist/css/<%= pkg.name %>-bitcare.min.css': 'dist/css/<%= pkg.name %>-bitcare.css',
-          'dist/css/<%= pkg.name %>-humanwave.min.css': 'dist/css/<%= pkg.name %>-humanwave.css',
+          'dist/bitcare/<%= pkg.name %>.min.css': 'dist/bitcare/<%= pkg.name %>.css',
+          'dist/humanwave/<%= pkg.name %>.min.css': 'dist/humanwave/<%= pkg.name %>.css',
         }
       },
       docs: {
