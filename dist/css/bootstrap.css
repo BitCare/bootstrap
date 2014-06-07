@@ -2281,8 +2281,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 10px;
+  font-size: 17.5px;
   line-height: inherit;
   color: #333;
   border: 0;
@@ -2397,7 +2397,7 @@ input[type="month"].input-lg {
   line-height: 46px;
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .radio,
 .checkbox {

@@ -2266,8 +2266,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 19.995px;
+  margin-bottom: 10px;
+  font-size: 16.6625px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2382,7 +2382,7 @@ input[type="month"].input-lg {
   line-height: 41px;
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .radio,
 .checkbox {
@@ -6084,6 +6084,7 @@ button.close {
   background-color: #595451;
   border-bottom: 1px solid #3e3b39;
   height: 130px;
+  margin-bottom: 20px;
 }
 .splash-header h1 {
   float: left;
