@@ -321,6 +321,12 @@ module.exports = function (grunt) {
           'fonts/*'
         ],
         dest: 'docs/dist'
+      },
+      blixem: {
+        expand: true,
+        cwd: './dist',
+        src: ['bitcare/*.css', 'humanwave/*.css'],
+        dest: '../blixem/static/brand'
       }
     },
 
@@ -468,6 +474,9 @@ module.exports = function (grunt) {
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean', 'dist-css', 'copy:fonts', 'dist-js', 'dist-docs']);
+
+  // Blixem distribution
+  grunt.registerTask('blixem', ['copy:blixem']);
 
   // Default task.
   grunt.registerTask('default', ['test', 'dist', 'build-glyphicons-data', 'build-customizer']);
