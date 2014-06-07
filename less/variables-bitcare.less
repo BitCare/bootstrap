@@ -57,7 +57,7 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.4; // 20/14
+@line-height-base:        1.5003751; // 20/13.33		Stuff gets 20 height
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
@@ -84,17 +84,17 @@
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-@padding-base-vertical:     6px;
-@padding-base-horizontal:   12px;
+@padding-base-vertical:     3px;
+@padding-base-horizontal:   6px;
 
-@padding-large-vertical:    10px;
-@padding-large-horizontal:  16px;
+@padding-large-vertical:    8px;
+@padding-large-horizontal:  12px;
 
-@padding-small-vertical:    5px;
-@padding-small-horizontal:  10px;
+@padding-small-vertical:    3px;
+@padding-small-horizontal:  6px;
 
 @padding-xs-vertical:       1px;
-@padding-xs-horizontal:     5px;
+@padding-xs-horizontal:     3px;
 
 @line-height-large:         1.33;
 @line-height-small:         1.5;
@@ -298,7 +298,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30px;
+@grid-gutter-width:         20px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
@@ -316,7 +316,7 @@
 @container-sm:                 @container-tablet;
 
 // Medium screen / desktop
-@container-desktop:            ((940px + @grid-gutter-width));
+@container-desktop:            ((960px + @grid-gutter-width));
 //** For `@screen-md-min` and up.
 @container-md:                 @container-desktop;
 

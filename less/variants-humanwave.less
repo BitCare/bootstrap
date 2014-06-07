@@ -3,9 +3,23 @@
 // --------------------------------------------------
 
 .bg-color-primary {
-  background-color: @brand-primary
+  background-color: @brand-primary;
 }
 
-.humanwave {
-	color: red;
+.splash-header {
+	background-color: @brand-primary;
+	border-bottom: 1px solid darken(@brand-primary, 10%);
+	height: 130px;
+	h1 {
+	    float: left;
+    	width: 300px;
+    	margin: 0px;
+		background: url("images/artwork.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+		a {
+			display: block;
+			height: 74px;
+			text-indent: -9999px;
+		}
+	}
 }
+

@@ -2679,6 +2679,7 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
+  height: 34px;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -3006,6 +3007,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
+  height: 45px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -3013,6 +3015,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-sm,
 .btn-group-sm > .btn {
+  height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -3020,6 +3023,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-xs,
 .btn-group-xs > .btn {
+  height: 22px;
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;

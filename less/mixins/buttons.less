@@ -43,6 +43,7 @@
 
 // Button sizes
 .button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  height: (floor(@font-size * @line-height) + (@padding-vertical * 2) + 2);   // Fix web-kit
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
