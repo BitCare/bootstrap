@@ -6080,6 +6080,15 @@ button.close {
 .bg-color-primary {
   background-color: #148195;
 }
+.color-primary {
+  color: #148195;
+}
+.color-link {
+  color: #148195;
+}
+.color-button-primary {
+  color: #148195;
+}
 .splash-header {
   background-color: #148195;
   border-bottom: 1px solid #0e5a68;
@@ -6096,4 +6105,18 @@ button.close {
   display: block;
   height: 74px;
   text-indent: -9999px;
+}
+.splash-header .splash-info {
+  font-size: 125%;
+  font-weight: 300;
+  margin-top: 6px;
+}
+.splash-info {
+  color: #fff;
+}
+.splash-info a {
+  color: #fff;
+}
+.splash-info a:hover {
+  color: #fff;
 }

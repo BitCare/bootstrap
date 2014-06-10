@@ -6122,4 +6122,38 @@ button.close {
 .bg-color-primary {
   background-color: #428bca;
 }
+.color-primary {
+  color: #428bca;
+}
+.color-link {
+  color: #428bca;
+}
+.color-button-primary {
+  color: #428bca;
+}
+.splash-header {
+  height: 130px;
+  margin-bottom: 20px;
+  background-color: #428bca;
+  border-bottom: 1px solid #3071a9;
+}
+.splash-header h1 {
+  float: left;
+  width: 300px;
+  margin: 0;
+  background: url("images/artwork.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.splash-header h1 a {
+  display: block;
+  height: 74px;
+  text-indent: -9999px;
+}
+.splash-header .splash-info {
+  margin-top: 6px;
+  font-size: 125%;
+  font-weight: 300;
+}
+.bg-color-primary {
+  background-color: #428bca;
+}
 /*# sourceMappingURL=bootstrap.css.map */
