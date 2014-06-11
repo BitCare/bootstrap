@@ -7,15 +7,15 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:          #f2f2f2;  // lighten(#000, 93.5%); // #eee
+@gray-darker:           #333333;		// lighten(#000, 13.5%); // #222
+@gray-dark:             #6b6b6b;		// lighten(#000, 20%);   // #333
+@gray:                  #cacaca;		// lighten(#000, 33.5%); // #555
+@gray-light:            #e6e6e6;		// lighten(#000, 60%);   // #999
+@gray-lighter:          #f2f2f2;  		// lighten(#000, 93.5%); // #eee
 
 @brand-primary:         #148195;
 @brand-success:         #689d33;
-@brand-info:            #ffd700;
+@brand-info:            #a0dae4;
 @brand-warning:         #ff6600;
 @brand-danger:          #cc0000;
 
@@ -178,7 +178,7 @@
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
-@input-color:                    @gray;
+@input-color:                    @gray-dark;
 //** `<input>` border color
 @input-border:                   #ccc;
 //** `<input>` border radius
@@ -563,10 +563,10 @@
 //##
 
 //** Padding applied to the modal body
-@modal-inner-padding:         15px;
+@modal-inner-padding:         10px;
 
 //** Padding applied to the modal title
-@modal-title-padding:         15px;
+@modal-title-padding:         10px;
 //** Modal title line-height
 @modal-title-line-height:     @line-height-base;
 
@@ -682,12 +682,12 @@
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
-@panel-inner-border:          #ddd;
-@panel-footer-bg:             #f5f5f5;
+@panel-inner-border:          darken(@gray-lighter, 7%);
+@panel-footer-bg:             @gray-lighter;
 
 @panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-border:        darken(@gray-lighter, 7%);
+@panel-default-heading-bg:    @gray-lighter;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -733,7 +733,7 @@
 //
 //##
 
-@well-bg:                     #f5f5f5;
+@well-bg:                     @gray-lighter;
 @well-border:                 darken(@well-bg, 7%);
 
 
