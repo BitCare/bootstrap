@@ -6152,12 +6152,26 @@ button.close {
 .color-button-primary {
   color: #428bca;
 }
+.loader-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  min-height: 100px;
+  padding: 0;
+  margin: 0;
+  background: none repeat scroll 0 0 white;
+  opacity: .7;
+}
 .loader {
   background-image: url('images/loading_sprite.gif');
 }
 .loader-large {
   width: 78px;
   height: 78px;
+  margin: 10px auto;
   background-position: 0 -1px;
 }
 .loader-medium {

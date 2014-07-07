@@ -39,11 +39,25 @@
 }
 
 // Loader
+.loader-background {
+    background: none repeat scroll 0 0 white;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    min-height: 100px;
+    opacity: 0.7;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 11;
+}
+
 .loader {
 	background-image: url('images/loading_sprite.gif');
 }
 .loader-large {
-	height: 78px; width: 78px; background-position: -0px -1px;
+	height: 78px; width: 78px; background-position: -0px -1px; margin: 10px auto;
 }
 .loader-medium {
 	height: 28px; width: 28px; background-position: -77px -31px;
