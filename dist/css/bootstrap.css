@@ -6186,7 +6186,6 @@ button.close {
 }
 .splash-header {
   height: 130px;
-  margin-bottom: 20px;
   background-color: #428bca;
   border-bottom: 1px solid #3071a9;
 }
@@ -6205,6 +6204,96 @@ button.close {
   margin-top: 6px;
   font-size: 125%;
   font-weight: 300;
+}
+.content-header {
+  padding: 10px 0;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+.content-body {
+  margin-top: 20px;
+}
+.identity-buttons {
+  width: 220px;
+  min-height: 283px;
+  margin: 15px auto;
+}
+.identity-buttons a {
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-image: url('/static/styles/images/login-buttons.png');
+}
+.identity-buttons a.google {
+  background-position: -40px 0;
+}
+.identity-buttons a.google:hover {
+  background-position: -260px 0;
+}
+.identity-buttons a.facebook {
+  background-position: -40px -40px;
+}
+.identity-buttons a.facebook:hover {
+  background-position: -260px -40px;
+}
+.identity-buttons a.microsoft {
+  background-position: -40px -80px;
+}
+.identity-buttons a.microsoft:hover {
+  background-position: -260px -80px;
+}
+.identity-buttons a.exact {
+  background-position: -40px -120px;
+}
+.identity-buttons a.exact:hover {
+  background-position: -260px -120px;
+}
+.identity-buttons a.bitcare {
+  background-position: -40px -160px;
+}
+.identity-buttons a.bitcare:hover {
+  background-position: -260px -160px;
+}
+.identity-buttons a.humanwave {
+  background-position: -40px -200px;
+}
+.identity-buttons a.humanwave:hover {
+  background-position: -260px -200px;
+}
+.identity-buttons a.gmail {
+  background-position: -40px -240px;
+}
+.identity-buttons a.gmail:hover {
+  background-position: -260px -240px;
+}
+.signup .signup-container {
+  min-height: 430px;
+}
+.signup .signup-image-container {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.signup p {
+  font-size: 120%;
+  font-weight: 300;
+}
+.signup ul li {
+  font-size: 120%;
+  font-weight: 300;
+}
+.signup ul.signup-icon-list li {
+  margin-bottom: .5em;
+  margin-left: 1.5em;
+}
+.signup ul.signup-icon-list li span.glyphicon {
+  float: left;
+  margin-left: -1.5em;
+  font-size: 110%;
+}
+.signup ul.signup-quotes li {
+  margin-bottom: 20px;
 }
 .bg-color-primary {
   background-color: #428bca;

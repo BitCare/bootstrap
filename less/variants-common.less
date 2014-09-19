@@ -66,13 +66,12 @@
 	height: 18px; width: 18px;	background-position: -82px -61px;
 }
 
-
 // Splash 
 .splash-header {
 	background-color: @brand-primary;
 	border-bottom: 1px solid darken(@brand-primary, 10%);
 	height: 130px;
-	margin-bottom: 20px;
+	// margin-bottom: 20px;
 	h1 {
 	    float: left;
     	width: 300px;
@@ -90,4 +89,37 @@
 		margin-top: 6px;
 	}
 }
+
+// Header
+.content-header {
+	background-color: @gray-lighter;
+	padding: 10px 0;
+	border-bottom: 1px solid darken(@gray-lighter, 7%);
+}
+
+// Content
+.content-body {
+	margin-top: 20px;
+}
+
+// Identities 
+.identity-buttons {margin: 15px auto; min-height: 283px; width: 220px;}
+.identity-buttons a { width: 220px; height: 40px; margin: 5px 0; background-image: url('/static/styles/images/login-buttons.png'); cursor: pointer; display: inline-block;}
+.identity-buttons a.google     {background-position: -40px 0;}         .identity-buttons a.google:hover       {background-position: -260px 0;}
+.identity-buttons a.facebook   {background-position: -40px -40px;}     .identity-buttons a.facebook:hover     {background-position: -260px -40px;}
+.identity-buttons a.microsoft  {background-position: -40px -80px;}     .identity-buttons a.microsoft:hover    {background-position: -260px -80px;}
+.identity-buttons a.exact      {background-position: -40px -120px;}    .identity-buttons a.exact:hover        {background-position: -260px -120px;}
+.identity-buttons a.bitcare    {background-position: -40px -160px;}    .identity-buttons a.bitcare:hover      {background-position: -260px -160px;}
+.identity-buttons a.humanwave  {background-position: -40px -200px;}    .identity-buttons a.humanwave:hover    {background-position: -260px -200px;}
+.identity-buttons a.gmail      {background-position: -40px -240px;}    .identity-buttons a.gmail:hover        {background-position: -260px -240px;}
+
+// Signup 
+.signup .signup-container {min-height: 430px;}
+.signup .signup-image-container {margin: 20px auto; max-width: 500px;}
+.signup p {font-size: 120%; font-weight: 300}
+.signup ul li {font-size: 120%; font-weight: 300;}
+.signup ul.signup-icon-list li { margin-left: 1.5em; margin-bottom: 0.5em;}
+.signup ul.signup-icon-list li span.glyphicon { margin-left: -1.5em; float: left; font-size: 110%;}
+.signup ul.signup-quotes li {margin-bottom: 20px;}
+
 
