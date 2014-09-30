@@ -6268,6 +6268,34 @@ button.close {
 .identity-buttons a.gmail:hover {
   background-position: -260px -240px;
 }
+.identity-icon {
+  width: 62px;
+  height: 62px;
+  background-image: url('/static/styles/images/login-buttons.png');
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.identity-icon.google {
+  background-position: -622px -4px;
+}
+.identity-icon.facebook {
+  background-position: -690px -5px;
+}
+.identity-icon.microsoft {
+  background-position: -622px -70px;
+}
+.identity-icon.exact {
+  background-position: -690px -70px;
+}
+.identity-icon.bitcare {
+  background-position: -623px -136px;
+}
+.identity-icon.humanwave {
+  background-position: -690px -136px;
+}
+.identity-icon.gmail {
+  background-position: -622px -201px;
+}
 .signup .signup-container {
   min-height: 430px;
 }

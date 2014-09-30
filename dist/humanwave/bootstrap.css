@@ -928,10 +928,10 @@ img {
   border-radius: 3px;
 }
 .img-thumbnail {
-  padding: 4px;
+  padding: 0px;
   line-height: 1.5003751;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #eae3e3;
   border-radius: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -4524,11 +4524,11 @@ a.list-group-item.active > .badge,
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 0px;
   margin-bottom: 20px;
   line-height: 1.5003751;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #eae3e3;
   border-radius: 2px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -6225,6 +6225,34 @@ button.close {
 }
 .identity-buttons a.gmail:hover {
   background-position: -260px -240px;
+}
+.identity-icon {
+  width: 62px;
+  height: 62px;
+  background-image: url('/static/styles/images/login-buttons.png');
+  border-radius: 2px;
+  border: 1px solid #eae3e3;
+}
+.identity-icon.google {
+  background-position: -622px -4px;
+}
+.identity-icon.facebook {
+  background-position: -690px -5px;
+}
+.identity-icon.microsoft {
+  background-position: -622px -70px;
+}
+.identity-icon.exact {
+  background-position: -690px -70px;
+}
+.identity-icon.bitcare {
+  background-position: -623px -136px;
+}
+.identity-icon.humanwave {
+  background-position: -690px -136px;
+}
+.identity-icon.gmail {
+  background-position: -622px -201px;
 }
 .signup .signup-container {
   min-height: 430px;
