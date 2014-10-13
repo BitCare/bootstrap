@@ -4068,11 +4068,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #0e5a68;
+  border-color: #148195;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #0e5a68;
+  background-color: #148195;
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #ffffff;
@@ -6172,7 +6172,31 @@ button.close {
   border-bottom: 1px solid #e0e0e0;
 }
 .content-body {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.navbar .navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    float: none;
+    width: 140px;
+    margin: 0 auto !important;
+  }
+}
+.navbar .navbar-brand a {
+  display: block;
+  height: 30px;
+  text-indent: -9999px;
+  margin-left: 0px !important;
+  margin-right: -2px;
+  width: 25px;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-brand a {
+    width: 120px;
+  }
 }
 .identity-buttons {
   margin: 15px auto;
@@ -6293,11 +6317,6 @@ button.close {
 .splash-info a:hover {
   color: #fff;
 }
-.navbar a.navbar-brand {
+.navbar .navbar-brand a {
   background: url('/static/brand/bitcare/images/artwork.png') no-repeat scroll -400px 3px transparent;
-  display: block;
-  width: 25px;
-  text-indent: -9999px;
-  margin-left: 0px !important;
-  margin-right: 8px;
 }

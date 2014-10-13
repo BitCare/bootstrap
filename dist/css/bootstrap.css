@@ -6214,7 +6214,31 @@ button.close {
   border-bottom: 1px solid #ddd;
 }
 .content-body {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+.navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    float: none;
+    width: 140px;
+    margin: 0 auto !important;
+  }
+}
+.navbar .navbar-brand a {
+  display: block;
+  width: 25px;
+  height: 30px;
+  margin-right: -2px;
+  margin-left: 0 !important;
+  text-indent: -9999px;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-brand a {
+    width: 120px;
+  }
 }
 .identity-buttons {
   width: 220px;
