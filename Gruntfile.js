@@ -259,15 +259,6 @@ module.exports = function (grunt) {
         keepSpecialComments: '*',
         advanced: false
       },
-<<<<<<< HEAD
-      core: {
-        files: {
-          'dist/css/<%= pkg.name %>.min.css': 'dist/css/<%= pkg.name %>.css',
-          'dist/css/<%= pkg.name %>-theme.min.css': 'dist/css/<%= pkg.name %>-theme.css',
-          'dist/bitcare/<%= pkg.name %>.min.css': 'dist/bitcare/<%= pkg.name %>.css',
-          'dist/humanwave/<%= pkg.name %>.min.css': 'dist/humanwave/<%= pkg.name %>.css',
-        }
-=======
       minifyCore: {
         src: 'dist/css/<%= pkg.name %>.css',
         dest: 'dist/css/<%= pkg.name %>.min.css'
@@ -275,8 +266,15 @@ module.exports = function (grunt) {
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
->>>>>>> 16b48259a62f576e52c903c476bd42b90ab22482
       },
+      minifyBitcare: {
+        src: 'dist/bitcare/<%= pkg.name %>.css',
+        dest: 'dist/bitcare/<%= pkg.name %>.min.css'
+      }
+      minifyHumanwave: {
+        src: 'dist/humanwave/<%= pkg.name %>.css',
+        dest: 'dist/humanwave/<%= pkg.name %>.min.css'
+      }
       docs: {
         src: [
           'docs/assets/css/src/pygments-manni.css',
@@ -320,17 +318,13 @@ module.exports = function (grunt) {
         src: [
           '**/*'
         ],
-<<<<<<< HEAD
-        dest: 'docs/dist'
+        dest: 'docs/dist/'
       },
       blixem: {
         expand: true,
         cwd: './dist',
         src: ['bitcare/*.css', 'humanwave/*.css'],
         dest: '../blixem/static/brand'
-=======
-        dest: 'docs/dist/'
->>>>>>> 16b48259a62f576e52c903c476bd42b90ab22482
       }
     },
 
@@ -520,16 +514,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-<<<<<<< HEAD
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileBitcare', 'less:compileHumanwave', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer', 'usebanner', 'csscomb', 'cssmin']);
-
-  // Docs distribution task.
-  grunt.registerTask('dist-docs', 'copy:docs');
-=======
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
->>>>>>> 16b48259a62f576e52c903c476bd42b90ab22482
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme', 'less:compileBitcare', 'less:compileHumanwave']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme', 'cssmin:minifyBitcare', 'cssmin:minifyHumanwave']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
@@ -555,12 +541,6 @@ module.exports = function (grunt) {
     generateRawFiles(grunt, banner);
   });
 
-<<<<<<< HEAD
-  // Task for updating the npm packages used by the Travis build.
-  grunt.registerTask('update-shrinkwrap', ['exec:npmUpdate', 'exec:npmShrinkWrap', '_update-shrinkwrap']);
-  grunt.registerTask('_update-shrinkwrap', function () { updateShrinkwrap.call(this, grunt); });
-};
-=======
   grunt.registerTask('commonjs', 'Generate CommonJS entrypoint module in dist dir.', function () {
     var srcFiles = grunt.config.get('concat.bootstrap.src');
     var destFilepath = 'dist/js/npm.js';
@@ -592,4 +572,3 @@ module.exports = function (grunt) {
     });
   });
 };
->>>>>>> 16b48259a62f576e52c903c476bd42b90ab22482
