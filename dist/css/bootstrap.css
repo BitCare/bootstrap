@@ -2627,7 +2627,7 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .radio,
 .checkbox {
@@ -6803,13 +6803,13 @@ button.close {
   }
 }
 .bg-color-primary {
-  background-color: #428bca;
+  background-color: #337ab7;
 }
 .bg-color-link {
-  background-color: #428bca;
+  background-color: #337ab7;
 }
 .bg-color-button {
-  background-color: #428bca;
+  background-color: #337ab7;
 }
 .bg-gray-darker {
   background-color: #222;
@@ -6821,19 +6821,19 @@ button.close {
   background-color: #555;
 }
 .bg-gray-light {
-  background-color: #999;
+  background-color: #777;
 }
 .bg-gray-lighter {
   background-color: #eee;
 }
 .color-primary {
-  color: #428bca;
+  color: #337ab7;
 }
 .color-link {
-  color: #428bca;
+  color: #337ab7;
 }
 .color-button-primary {
-  color: #428bca;
+  color: #337ab7;
 }
 .loader-background {
   position: absolute;
@@ -6869,8 +6869,8 @@ button.close {
 }
 .splash-header {
   height: 130px;
-  background-color: #428bca;
-  border-bottom: 1px solid #3071a9;
+  background-color: #337ab7;
+  border-bottom: 1px solid #286090;
 }
 .splash-header h1 {
   float: left;
@@ -7032,6 +7032,6 @@ button.close {
   margin-bottom: 20px;
 }
 .bg-color-primary {
-  background-color: #428bca;
+  background-color: #337ab7;
 }
 /*# sourceMappingURL=bootstrap.css.map */

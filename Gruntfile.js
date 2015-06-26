@@ -270,11 +270,11 @@ module.exports = function (grunt) {
       minifyBitcare: {
         src: 'dist/bitcare/<%= pkg.name %>.css',
         dest: 'dist/bitcare/<%= pkg.name %>.min.css'
-      }
+      },
       minifyHumanwave: {
         src: 'dist/humanwave/<%= pkg.name %>.css',
         dest: 'dist/humanwave/<%= pkg.name %>.min.css'
-      }
+      },
       docs: {
         src: [
           'docs/assets/css/src/pygments-manni.css',
