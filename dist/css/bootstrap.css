@@ -4270,7 +4270,7 @@ a.thumbnail.active {
 }
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -5909,6 +5909,7 @@ button.close {
   margin: 10px 0;
 }
 .page-subtitle {
+  height: 22px;
   background-color: #e8f5f8;
   border-bottom: 1px solid #c4e7ee;
 }

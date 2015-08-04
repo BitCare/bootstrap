@@ -139,6 +139,10 @@
 }
 .page-subtitle {
 	background-color: @brand-lightest; border-bottom: 1px solid @brand-lighter; 
+	height: (floor(@font-size-small) + (@padding-small-vertical * 2));
+
+  // height: (floor(@font-size * @line-height) + (@padding-vertical * 2) + 2);   // Fix web-kit
+
 }
 
 /* Option button for pencil, etc.. */

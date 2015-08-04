@@ -4250,8 +4250,8 @@ a.thumbnail.active {
   color: #595451;
 }
 .alert {
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid transparent;
   border-radius: 2px;
 }
@@ -4271,7 +4271,7 @@ a.thumbnail.active {
 }
 .alert-dismissable,
 .alert-dismissible {
-  padding-right: 35px;
+  padding-right: 30px;
 }
 .alert-dismissable .close,
 .alert-dismissible .close {
@@ -5880,6 +5880,7 @@ button.close {
 .page-subtitle {
   background-color: #f9f7f7;
   border-bottom: 1px solid #ebeaea;
+  height: 18px;
 }
 /* Option button for pencil, etc.. */
 .btn-option {
