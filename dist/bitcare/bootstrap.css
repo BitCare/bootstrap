@@ -454,15 +454,15 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 h3,
 .h3 {
-  font-size: 18px;
+  font-size: 15px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 14px;
 }
 h5,
 .h5 {
@@ -4411,7 +4411,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .media {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .media:first-child {
   margin-top: 0;
@@ -5898,6 +5898,12 @@ button.close {
   border-color: #c4e7ee;
 }
 /* image thumbs */
+img.thumb-large {
+  border: 1px solid #c4e7ee;
+  padding: 0;
+  width: 120px;
+  height: 120px;
+}
 img.thumb-medium {
   border: 1px solid #c4e7ee;
   padding: 0;
