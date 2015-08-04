@@ -1725,7 +1725,7 @@ input[type="checkbox"]:focus {
 }
 output {
   display: block;
-  padding-top: 4px;
+  padding-top: 5px;
   font-size: 13.33px;
   line-height: 1.5003751;
   color: #595451;
@@ -1733,8 +1733,8 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 28px;
-  padding: 3px 6px;
+  height: 30px;
+  padding: 4px 12px;
   font-size: 13.33px;
   line-height: 1.5003751;
   color: #595451;
@@ -1785,7 +1785,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 28px;
+    line-height: 30px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -1874,8 +1874,8 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 0;
   min-height: 33.33px;
 }
@@ -1962,7 +1962,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 35px;
+  padding-right: 37.5px;
 }
 .form-control-feedback {
   position: absolute;
@@ -1970,9 +1970,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   pointer-events: none;
 }
@@ -2148,11 +2148,11 @@ select[multiple].input-lg {
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 4px;
+  padding-top: 5px;
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 24px;
+  min-height: 25px;
 }
 .form-horizontal .form-group {
   margin-left: -10px;
@@ -2162,7 +2162,7 @@ select[multiple].input-lg {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 4px;
+    padding-top: 5px;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -2192,8 +2192,8 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   height: 28px;
-  padding: 3px 6px;
-  font-size: 13.33px;
+  padding: 4px 12px;
+  font-size: 12px;
   line-height: 1.5003751;
   border-radius: 2px;
   -webkit-user-select: none;
@@ -2214,7 +2214,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #595451;
+  color: #a68502;
   text-decoration: none;
 }
 .btn:active,
@@ -2238,27 +2238,27 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #595451;
+  color: #a68502;
   background-color: #f9f7f7;
-  border-color: #eee8e8;
+  border-color: #ebeaea;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #595451;
+  color: #a68502;
   background-color: #e3dada;
-  border-color: #b7a0a0;
+  border-color: #ada9a9;
 }
 .btn-default:hover {
-  color: #595451;
+  color: #a68502;
   background-color: #e3dada;
-  border-color: #d4c5c5;
+  border-color: #cdcbcb;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #595451;
+  color: #a68502;
   background-color: #e3dada;
-  border-color: #d4c5c5;
+  border-color: #cdcbcb;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -2269,9 +2269,9 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #595451;
+  color: #a68502;
   background-color: #d4c5c5;
-  border-color: #b7a0a0;
+  border-color: #ada9a9;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2297,34 +2297,34 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #f9f7f7;
-  border-color: #eee8e8;
+  border-color: #ebeaea;
 }
 .btn-default .badge {
   color: #f9f7f7;
-  background-color: #595451;
+  background-color: #a68502;
 }
 .btn-primary {
   color: #433f3d;
   background-color: #fad64c;
-  border-color: #f9cb1a;
+  border-color: #c8a520;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #433f3d;
   background-color: #f9cb1a;
-  border-color: #8f7304;
+  border-color: #5a4a0e;
 }
 .btn-primary:hover {
   color: #433f3d;
   background-color: #f9cb1a;
-  border-color: #d0a606;
+  border-color: #937918;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #433f3d;
   background-color: #f9cb1a;
-  border-color: #d0a606;
+  border-color: #937918;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -2337,7 +2337,7 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary.focus {
   color: #433f3d;
   background-color: #e9ba07;
-  border-color: #8f7304;
+  border-color: #5a4a0e;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2363,7 +2363,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #fad64c;
-  border-color: #f9cb1a;
+  border-color: #c8a520;
 }
 .btn-primary .badge {
   color: #fad64c;
@@ -2503,26 +2503,26 @@ fieldset[disabled] .btn-info.active {
 }
 .btn-warning {
   color: #ffffff;
-  background-color: #ff6600;
-  border-color: #e65c00;
+  background-color: #ff9900;
+  border-color: #e68a00;
 }
 .btn-warning:focus,
 .btn-warning.focus {
   color: #ffffff;
-  background-color: #cc5200;
-  border-color: #662900;
+  background-color: #cc7a00;
+  border-color: #663d00;
 }
 .btn-warning:hover {
   color: #ffffff;
-  background-color: #cc5200;
-  border-color: #a84300;
+  background-color: #cc7a00;
+  border-color: #a86500;
 }
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   color: #ffffff;
-  background-color: #cc5200;
-  border-color: #a84300;
+  background-color: #cc7a00;
+  border-color: #a86500;
 }
 .btn-warning:active:hover,
 .btn-warning.active:hover,
@@ -2534,8 +2534,8 @@ fieldset[disabled] .btn-info.active {
 .btn-warning.active.focus,
 .open > .dropdown-toggle.btn-warning.focus {
   color: #ffffff;
-  background-color: #a84300;
-  border-color: #662900;
+  background-color: #a86500;
+  border-color: #663d00;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -2560,11 +2560,11 @@ fieldset[disabled] .btn-warning:active,
 .btn-warning.disabled.active,
 .btn-warning[disabled].active,
 fieldset[disabled] .btn-warning.active {
-  background-color: #ff6600;
-  border-color: #e65c00;
+  background-color: #ff9900;
+  border-color: #e68a00;
 }
 .btn-warning .badge {
-  color: #ff6600;
+  color: #ff9900;
   background-color: #ffffff;
 }
 .btn-danger {
@@ -3125,7 +3125,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
-  padding: 3px 6px;
+  padding: 4px 12px;
   font-size: 13.33px;
   font-weight: normal;
   line-height: 1;
@@ -3599,8 +3599,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -3685,8 +3685,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .navbar-btn.btn-sm {
   margin-top: 2px;
@@ -3948,7 +3948,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 3px 6px;
+  padding: 4px 12px;
   line-height: 1.5003751;
   text-decoration: none;
   color: #a68502;
@@ -4123,11 +4123,11 @@ a.label:focus {
   background-color: #78cbd9;
 }
 .label-warning {
-  background-color: #ff6600;
+  background-color: #ff9900;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #cc5200;
+  background-color: #cc7a00;
 }
 .label-danger {
   background-color: #cc0000;
@@ -4394,7 +4394,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-warning {
-  background-color: #ff6600;
+  background-color: #ff9900;
 }
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
