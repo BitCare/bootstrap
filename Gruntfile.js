@@ -110,7 +110,7 @@ module.exports = function (grunt) {
           'js/transition.js',
           'js/alert.js',
           'js/button.js',
-          'js/carousel.js',
+          // 'js/carousel.js',
           'js/collapse.js',
           'js/dropdown.js',
           'js/modal.js',
@@ -325,6 +325,13 @@ module.exports = function (grunt) {
         cwd: './dist',
         src: ['bitcare/*.css', 'humanwave/*.css'],
         dest: '../blixem/static/brand'
+      },
+      blixem_js: {
+        expand: true,
+        cwd: './dist',
+        src: ['js/bootstrap.js', 'js/bootstrap.min.js'],
+        dest: '../blixem/static/bootstrap'
+
       }
     },
 
@@ -521,7 +528,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
 
   // Blixem distribution
-  grunt.registerTask('blixem', ['copy:blixem']);
+  grunt.registerTask('blixem', ['dist', 'copy:blixem', 'copy:blixem_js']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);

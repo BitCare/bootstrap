@@ -126,8 +126,34 @@
     	width: 120px;
   	}
 }
+.navbar-nav.navbar-right:last-child { margin-right: 0 !important; }
+.navbar a.has-fa {padding: 3px 6px;}
+.navbar .fa {font-size: 20px; vertical-align: middle;}
 
+// Page components
+.page-title {
+	border-bottom: 1px solid @brand-lighter;
+}
+.page-block {
+	margin: 10px 0;
+}
+.page-subtitle {
+	background-color: @brand-lightest; border-bottom: 1px solid @brand-lighter; 
+}
 
+/* Option button for pencil, etc.. */
+.btn-option {
+    font-size: 15px;
+    height: 24px; width: 24px;
+    padding: 0;
+    background-color: @body-bg;
+    color: #a1a1a1;
+    border-color: @body-bg;
+}
+.btn-option:hover {
+    color: @gray-darker;
+    border-color: @brand-lighter;
+}
 
 // Identities 
 .identity-buttons {margin: 15px auto; width: 220px;}
