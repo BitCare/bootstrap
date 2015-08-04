@@ -5895,6 +5895,25 @@ button.close {
   color: #333333;
   border-color: #c4e7ee;
 }
+/* image thumbs */
+img.thumb-medium {
+  border: 1px solid #c4e7ee;
+  padding: 0;
+  width: 90px;
+  height: 90px;
+}
+img.thumb-small {
+  border: 1px solid #c4e7ee;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+}
+img.thumb-tiny {
+  border: 1px solid #c4e7ee;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
 .identity-buttons {
   margin: 15px auto;
   width: 220px;
