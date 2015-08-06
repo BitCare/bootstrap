@@ -196,7 +196,7 @@
 //** Text color for `<input>`s
 @input-color:                    @gray-dark;
 //** `<input>` border color
-@input-border:                   #ccc;
+@input-border:                   @brand-lighter;	// #ccc;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -214,7 +214,7 @@
 @input-color-placeholder:        @gray-light;
 
 //** Default `.form-control` height
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2));	// (@line-height-computed + (@padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
@@ -719,12 +719,12 @@
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
-@panel-inner-border:          darken(@gray-lighter, 7%);
-@panel-footer-bg:             @gray-lighter;
+@panel-inner-border:          @brand-lighter;		//darken(@gray-lighter, 7%);
+@panel-footer-bg:             @brand-lightest;		//@gray-lighter;
 
-@panel-default-text:          @gray-dark;
-@panel-default-border:        darken(@gray-lighter, 7%);
-@panel-default-heading-bg:    @gray-lighter;
+@panel-default-text:          @gray-darker;
+@panel-default-border:        @brand-lighter;		// darken(@gray-lighter, 7%);
+@panel-default-heading-bg:    @brand-lightest;		// @gray-lighter;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;

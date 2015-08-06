@@ -1734,14 +1734,14 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 30px;
+  height: 28px;
   padding: 4px 12px;
   font-size: 13.33px;
   line-height: 1.5003751;
   color: #6b6b6b;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #c4e7ee;
   border-radius: 2px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1786,7 +1786,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 30px;
+    line-height: 28px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -1963,7 +1963,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 37.5px;
+  padding-right: 35px;
 }
 .form-control-feedback {
   position: absolute;
@@ -1971,9 +1971,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
   text-align: center;
   pointer-events: none;
 }
@@ -3133,7 +3133,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #6b6b6b;
   text-align: center;
   background-color: #f2f2f2;
-  border: 1px solid #cccccc;
+  border: 1px solid #c4e7ee;
   border-radius: 2px;
 }
 .input-group-addon.input-sm {
@@ -3600,8 +3600,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -3686,8 +3686,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 .navbar-btn.btn-sm {
   margin-top: 2px;
@@ -4699,8 +4699,8 @@ button.list-group-item-danger.active:focus {
 }
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f2f2f2;
-  border-top: 1px solid #e0e0e0;
+  background-color: #e8f5f8;
+  border-top: 1px solid #c4e7ee;
   border-bottom-right-radius: 1px;
   border-bottom-left-radius: 1px;
 }
@@ -4891,31 +4891,31 @@ button.list-group-item-danger.active:focus {
 }
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #c4e7ee;
 }
 .panel-group .panel-footer {
   border-top: 0;
 }
 .panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #c4e7ee;
 }
 .panel-default {
-  border-color: #e0e0e0;
+  border-color: #c4e7ee;
 }
 .panel-default > .panel-heading {
-  color: #6b6b6b;
-  background-color: #f2f2f2;
-  border-color: #e0e0e0;
+  color: #333333;
+  background-color: #e8f5f8;
+  border-color: #c4e7ee;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #e0e0e0;
+  border-top-color: #c4e7ee;
 }
 .panel-default > .panel-heading .badge {
-  color: #f2f2f2;
-  background-color: #6b6b6b;
+  color: #e8f5f8;
+  background-color: #333333;
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #e0e0e0;
+  border-bottom-color: #c4e7ee;
 }
 .panel-primary {
   border-color: #148195;
@@ -5871,6 +5871,24 @@ button.close {
 .navbar .fa {
   font-size: 20px;
   vertical-align: middle;
+}
+input.form-control.required {
+  background-position: right 2px !important;
+}
+.form-control.select2-container {
+  padding: 0 !important;
+}
+.form-control.select2-container .select2-choice {
+  height: 27px !important;
+  border: 1px solid transparent !important;
+}
+.form-control.select2-container-active .select2-choice {
+  outline: 0 none;
+  border: 1px solid #66afe9 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.panel {
+  opacity: 0.9;
 }
 .page-title {
   border-bottom: 1px solid #c4e7ee;
