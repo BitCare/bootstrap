@@ -491,7 +491,7 @@ p {
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 small,
@@ -6040,26 +6040,6 @@ img.thumb-tiny {
 .signup .signup-image-container {
   max-width: 500px;
   margin: 20px auto;
-}
-.signup p {
-  font-size: 120%;
-  font-weight: 300;
-}
-.signup ul li {
-  font-size: 120%;
-  font-weight: 300;
-}
-.signup ul.signup-icon-list li {
-  margin-bottom: .5em;
-  margin-left: 1.5em;
-}
-.signup ul.signup-icon-list li span.glyphicon {
-  float: left;
-  margin-left: -1.5em;
-  font-size: 110%;
-}
-.signup ul.signup-quotes li {
-  margin-bottom: 20px;
 }
 .bg-color-primary {
   background-color: #337ab7;
