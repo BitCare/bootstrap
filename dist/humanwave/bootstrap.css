@@ -5809,7 +5809,7 @@ button.close {
 .splash-header {
   background-color: #595451;
   border-bottom: 1px solid #3e3b39;
-  height: 130px;
+  height: 80px;
 }
 .splash-header h1 {
   float: left;
@@ -5891,6 +5891,8 @@ input.form-control.required {
 }
 .page-title {
   border-bottom: 1px solid #ebeaea;
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 .page-block {
   margin: 10px 0;
