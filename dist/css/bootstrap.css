@@ -5948,6 +5948,16 @@ input.form-control.required {
   color: #222;
   border-color: #c4e7ee;
 }
+/* Blocks */
+.block-header {
+  padding: 1px 5px;
+  margin-bottom: 10px;
+  background-color: #e8f5f8;
+  border: 1px solid #c4e7ee;
+}
+.block-footer {
+  margin-bottom: 20px;
+}
 /* image thumbs */
 img.thumb-large {
   width: 120px;
