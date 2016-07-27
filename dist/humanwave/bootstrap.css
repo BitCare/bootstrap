@@ -6571,6 +6571,15 @@ button.close {
 .color-primary {
   color: #595451;
 }
+.color-success {
+  color: #689d33;
+}
+.color-warning {
+  color: #ff9900;
+}
+.color-danger {
+  color: #cc0000;
+}
 .color-link {
   color: #a68502;
 }

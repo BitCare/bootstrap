@@ -6604,6 +6604,15 @@ button.close {
 .color-primary {
   color: #337ab7;
 }
+.color-success {
+  color: #5cb85c;
+}
+.color-warning {
+  color: #f0ad4e;
+}
+.color-danger {
+  color: #d9534f;
+}
 .color-link {
   color: #337ab7;
 }
