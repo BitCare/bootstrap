@@ -6021,7 +6021,7 @@ button.close {
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 30px auto;
+    margin: 100px auto 30px;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
@@ -6653,6 +6653,7 @@ button.close {
 }
 .splash-header {
   height: 80px;
+  margin-top: -32px;
   background-color: #337ab7;
   border-bottom: 1px solid #286090;
 }
@@ -6817,88 +6818,6 @@ img.thumb-tiny {
   padding: 0;
   border: 1px solid #c4e7ee;
 }
-.identity-buttons {
-  width: 220px;
-  margin: 15px auto;
-}
-.identity-buttons a {
-  display: inline-block;
-  width: 220px;
-  height: 40px;
-  margin: 5px 0;
-  cursor: pointer;
-  background-image: url('/static/styles/images/login-buttons.png');
-}
-.identity-buttons a.google {
-  background-position: -40px 0;
-}
-.identity-buttons a.google:hover {
-  background-position: -260px 0;
-}
-.identity-buttons a.facebook {
-  background-position: -40px -40px;
-}
-.identity-buttons a.facebook:hover {
-  background-position: -260px -40px;
-}
-.identity-buttons a.microsoft {
-  background-position: -40px -80px;
-}
-.identity-buttons a.microsoft:hover {
-  background-position: -260px -80px;
-}
-.identity-buttons a.exact {
-  background-position: -40px -120px;
-}
-.identity-buttons a.exact:hover {
-  background-position: -260px -120px;
-}
-.identity-buttons a.bitcare {
-  background-position: -40px -160px;
-}
-.identity-buttons a.bitcare:hover {
-  background-position: -260px -160px;
-}
-.identity-buttons a.humanwave {
-  background-position: -40px -200px;
-}
-.identity-buttons a.humanwave:hover {
-  background-position: -260px -200px;
-}
-.identity-buttons a.gmail {
-  background-position: -40px -240px;
-}
-.identity-buttons a.gmail:hover {
-  background-position: -260px -240px;
-}
-.identity-icon {
-  width: 62px;
-  height: 62px;
-  background-image: url('/static/styles/images/login-buttons.png');
-  border: 1px solid #ddd;
-  border-radius: 2px;
-}
-.identity-icon.google {
-  background-position: -622px -4px;
-}
-.identity-icon.facebook {
-  background-position: -690px -5px;
-}
-.identity-icon.microsoft {
-  background-position: -622px -70px;
-}
-.identity-icon.exact {
-  background-position: -690px -70px;
-}
-.identity-icon.bitcare {
-  background-position: -623px -136px;
-}
-.identity-icon.humanwave {
-  background-position: -690px -136px;
-}
-.identity-icon.gmail {
-  background-position: -622px -201px;
-}
 .signup .signup-container {
   min-height: 430px;
 }
@@ -6941,7 +6860,7 @@ img.thumb-tiny {
 }
 .btn-social.btn-lg > :first-child {
   width: 41px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 41px;
 }
 .btn-social.btn-sm {
@@ -6987,7 +6906,7 @@ img.thumb-tiny {
 }
 .btn-social-icon.btn-lg > :first-child {
   width: 41px;
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 41px;
 }
 .btn-social-icon.btn-sm {
@@ -8546,5 +8465,71 @@ fieldset[disabled] .btn-office-365.active {
 .btn-office-365 .badge {
   color: #fff;
   background-color: #eb3c02;
+}
+.btn-exact {
+  color: #fff;
+  background-color: #e1141e;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact:focus,
+.btn-exact.focus {
+  color: #fff;
+  background-color: #b21018;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact:hover {
+  color: #fff;
+  background-color: #b21018;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact:active,
+.btn-exact.active,
+.open > .dropdown-toggle.btn-exact {
+  color: #fff;
+  background-color: #b21018;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact:active:hover,
+.btn-exact.active:hover,
+.open > .dropdown-toggle.btn-exact:hover,
+.btn-exact:active:focus,
+.btn-exact.active:focus,
+.open > .dropdown-toggle.btn-exact:focus,
+.btn-exact:active.focus,
+.btn-exact.active.focus,
+.open > .dropdown-toggle.btn-exact.focus {
+  color: #fff;
+  background-color: #910d13;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact:active,
+.btn-exact.active,
+.open > .dropdown-toggle.btn-exact {
+  background-image: none;
+}
+.btn-exact.disabled,
+.btn-exact[disabled],
+fieldset[disabled] .btn-exact,
+.btn-exact.disabled:hover,
+.btn-exact[disabled]:hover,
+fieldset[disabled] .btn-exact:hover,
+.btn-exact.disabled:focus,
+.btn-exact[disabled]:focus,
+fieldset[disabled] .btn-exact:focus,
+.btn-exact.disabled.focus,
+.btn-exact[disabled].focus,
+fieldset[disabled] .btn-exact.focus,
+.btn-exact.disabled:active,
+.btn-exact[disabled]:active,
+fieldset[disabled] .btn-exact:active,
+.btn-exact.disabled.active,
+.btn-exact[disabled].active,
+fieldset[disabled] .btn-exact.active {
+  background-color: #e1141e;
+  border-color: rgba(0, 0, 0, .2);
+}
+.btn-exact .badge {
+  color: #e1141e;
+  background-color: #fff;
 }
 /*# sourceMappingURL=bootstrap.css.map */
