@@ -31,6 +31,9 @@
 .color-primary {
 	color: @brand-primary;
 }
+.color-secondary {
+	color: @gray-dark;
+}
 .color-success {
 	color: @brand-success;
 }
@@ -137,32 +140,78 @@
 }
 
 // Navbar
-.navbar .navbar-brand {
-	padding-top: 0px;
-	padding-bottom: 0px;
+.navbar {
+	.navbar-brand {
+		padding-top: 0px;
+		padding-bottom: 0px;
 
-  	@media (max-width: @screen-sm-min) {
-  		float: none;
-    	width: 140px;
-    	margin: 0 auto !important;
-  	}
-}
-.navbar .navbar-brand a {
-    display: block;
-    height: 30px;
-    text-indent: -9999px;
-    margin-left: 0px !important;
-    margin-right: -2px;
+	  	@media (max-width: @screen-sm-min) {
+	  		float: none;
+	    	width: 140px;
+	    	margin: 0 auto !important;
+	  	}
+	  	a {
+		    display: block;
+		    height: 30px;
+		    text-indent: -9999px;
+		    margin-left: 0px !important;
+		    margin-right: -2px;
 
-    width: 25px; 
-  	@media (max-width: @screen-sm-min) {
-    	width: 120px;
-  	}
+		    width: 25px; 
+		  	@media (max-width: @screen-sm-min) {
+		    	width: 120px;
+		  	}
+
+	  	}
+	}
+	a {
+		.has-fa {padding: 3px 6px;}
+	}
+	.fa {font-size: 20px; vertical-align: middle;}
+
 }
+// .navbar .navbar-brand a {
+//     display: block;
+//     height: 30px;
+//     text-indent: -9999px;
+//     margin-left: 0px !important;
+//     margin-right: -2px;
+
+//     width: 25px; 
+//   	@media (max-width: @screen-sm-min) {
+//     	width: 120px;
+//   	}
+// }
 .navbar-nav.navbar-right:last-child { margin-right: 0 !important; }
-.navbar a.has-fa {padding: 3px 6px;}
-.navbar .fa {font-size: 20px; vertical-align: middle;}
+// .navbar a.has-fa {padding: 3px 6px;}
+// .navbar .fa {font-size: 20px; vertical-align: middle;}
  
+.navbar-filter
+{
+    background-color: @brand-lightest;
+    border: 1px solid @brand-lighter;
+    padding: 2px;
+    margin: 0;
+    /*min-height: 32px;*/
+	.form-control-static {
+	    padding: 2px 8px;
+	    min-height: 0;
+	}    
+	.navbar-collapse {
+		ul {
+			margin:0;
+		}
+		@media(min-width:768px){
+			padding:0;
+		}
+	}
+}
+// .navbar-filter .form-control-static {
+//     padding: 2px 8px;
+//     min-height: 0;
+// }
+
+
 // Forms
 input.form-control.required {
 	background-position: right 2px !important;
@@ -210,7 +259,7 @@ input.form-control.required {
     height: 24px; width: 24px;
     padding: 0;
     background-color: @body-bg;
-    color: #a1a1a1;
+    color: @gray-dark;
     border-color: @body-bg;
 }
 .btn-option:hover {
@@ -264,5 +313,85 @@ img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height:
 // .signup ul.signup-icon-list li { margin-left: 1.5em; margin-bottom: 0.5em;}
 // .signup ul.signup-icon-list li span.glyphicon { margin-left: -1.5em; float: left; font-size: 110%;}
 // .signup ul.signup-quotes li {margin-bottom: 20px;}
+
+// Table
+.table-clean {width: 100%;}
+.table-clean tr.table-header td {padding-top:10px;}
+
+// Section
+.section {
+	// margin: 10px 0;
+	.section-header {
+	    height: 28px;
+	    .h1, .h2, .h3, .h4 {
+		    vertical-align: bottom;
+		    margin: 0
+	    }
+	}
+	.section-navigation {
+		.navbar {
+			@media(min-width:768px){	
+				min-height: 34px
+			}
+		}
+	}
+}
+
+// Card
+.card {
+	margin: 10px 0;
+	.card-header {
+	    border-bottom: 1px solid @gray-dark;
+	    margin-bottom: 5px;
+	    height: 28px;
+	    .h1, .h2, .h3, .h4 {
+		    vertical-align: bottom;
+		    margin: 0
+	    }
+	}
+	.card-separator {
+		height: 5px; 
+		border-bottom: 1px solid @gray-dark;
+	}
+	.card-footer {
+
+	}
+}
+
+// form
+.form {
+    .form-header {
+        border-bottom: 1px solid @gray-dark;
+        margin-bottom: 5px;;
+        height: 28px;
+	    .h1, .h2, .h3, .h4 {
+		    vertical-align: bottom;
+		    margin: 0
+	    }
+    }
+    .form-separator {
+        border-bottom: 1px solid @gray-dark;
+        margin-bottom: 10px;
+    }
+}
+
+// Show/Hide bar
+.show-hide-bar {
+    background-color: @brand-lightest;
+    border: 1px solid @brand-lighter;
+    margin: 0 0 10px 0;
+
+    &:hover {
+	    background-color: @brand-lighter;
+	    border: 1px solid @brand-light;
+    }
+	.btn {
+	    padding: 1px;
+	    font-weight: normal;
+	    height: 22px;
+	}
+}
+
+
 
 
