@@ -1432,7 +1432,7 @@ dl {
 }
 dt,
 dd {
-  line-height: 1.5003751;
+  line-height: 1.75;
 }
 dt {
   font-weight: bold;
@@ -1443,7 +1443,7 @@ dd {
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
-    width: 160px;
+    width: 140px;
     clear: left;
     text-align: right;
     overflow: hidden;
@@ -1451,7 +1451,7 @@ dd {
     white-space: nowrap;
   }
   .dl-horizontal dd {
-    margin-left: 180px;
+    margin-left: 160px;
   }
 }
 abbr[title],
@@ -2538,7 +2538,7 @@ output {
   display: block;
   width: 100%;
   height: 28px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 13.33px;
   line-height: 1.5003751;
   color: #333333;
@@ -2996,7 +2996,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   height: 28px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 12px;
   line-height: 1.5003751;
   border-radius: 2px;
@@ -3929,7 +3929,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 13.33px;
   font-weight: normal;
   line-height: 1;
@@ -4752,7 +4752,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 4px 12px;
+  padding: 4px 8px;
   line-height: 1.5003751;
   text-decoration: none;
   color: #148195;
@@ -6790,6 +6790,10 @@ input.form-control.required {
   border: 1px solid #66afe9 !important;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
+.form-control .select2-container-disabled .select2-choice {
+  background-color: #f2f2f2;
+  border: 1px solid #c4e7ee;
+}
 .panel {
   opacity: 0.9;
 }
@@ -6959,7 +6963,7 @@ tr.table-header td {
  */
 .btn-social {
   position: relative;
-  padding-left: 40px;
+  padding-left: 36px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7002,7 +7006,7 @@ tr.table-header td {
 }
 .btn-social-icon {
   position: relative;
-  padding-left: 40px;
+  padding-left: 36px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

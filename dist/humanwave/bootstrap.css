@@ -3,6 +3,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*  darken(@btn-default-bg, 5%);;  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -1074,7 +1075,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13.33px;
   line-height: 1.5003751;
-  color: #595451;
+  color: #433f3d;
   background-color: #ffffff;
 }
 input,
@@ -1431,7 +1432,7 @@ dl {
 }
 dt,
 dd {
-  line-height: 1.5003751;
+  line-height: 1.75;
 }
 dt {
   font-weight: bold;
@@ -1442,7 +1443,7 @@ dd {
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
-    width: 160px;
+    width: 140px;
     clear: left;
     text-align: right;
     overflow: hidden;
@@ -1450,7 +1451,7 @@ dd {
     white-space: nowrap;
   }
   .dl-horizontal dd {
-    margin-left: 180px;
+    margin-left: 160px;
   }
 }
 abbr[title],
@@ -2537,7 +2538,7 @@ output {
   display: block;
   width: 100%;
   height: 28px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 13.33px;
   line-height: 1.5003751;
   color: #433f3d;
@@ -2608,7 +2609,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 41px;
+    line-height: 37px;
   }
 }
 .form-group {
@@ -2725,41 +2726,41 @@ select[multiple].input-sm {
   line-height: 1.5;
 }
 .input-lg {
-  height: 41px;
-  padding: 8px 12px;
+  height: 37px;
+  padding: 6px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
   border-radius: 3px;
 }
 select.input-lg {
-  height: 41px;
-  line-height: 41px;
+  height: 37px;
+  line-height: 37px;
 }
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
-  height: 41px;
-  padding: 8px 12px;
+  height: 37px;
+  padding: 6px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
   border-radius: 3px;
 }
 .form-group-lg select.form-control {
-  height: 41px;
-  line-height: 41px;
+  height: 37px;
+  line-height: 37px;
 }
 .form-group-lg textarea.form-control,
 .form-group-lg select[multiple].form-control {
   height: auto;
 }
 .form-group-lg .form-control-static {
-  height: 41px;
+  height: 37px;
   min-height: 37px;
-  padding: 9px 12px;
+  padding: 7px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
 }
 .has-feedback {
   position: relative;
@@ -2782,9 +2783,9 @@ select[multiple].input-lg {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 41px;
-  height: 41px;
-  line-height: 41px;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
@@ -2893,7 +2894,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #9a9390;
+  color: #867e7a;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -2973,7 +2974,7 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11.64px;
+    padding-top: 8.8px;
     font-size: 17px;
   }
 }
@@ -2995,7 +2996,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   height: 28px;
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 12px;
   line-height: 1.5003751;
   border-radius: 2px;
@@ -3471,10 +3472,10 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  height: 40px;
-  padding: 8px 12px;
+  height: 36px;
+  padding: 6px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
   border-radius: 3px;
 }
 .btn-sm,
@@ -3592,13 +3593,13 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.5003751;
-  color: #595451;
+  color: #433f3d;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #4c4745;
+  color: #363231;
   background-color: #f9f7f7;
 }
 .dropdown-menu > .active > a,
@@ -3868,17 +3869,17 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 41px;
-  padding: 8px 12px;
+  height: 37px;
+  padding: 6px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
   border-radius: 3px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 41px;
-  line-height: 41px;
+  height: 37px;
+  line-height: 37px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3928,7 +3929,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
-  padding: 4px 12px;
+  padding: 4px 8px;
   font-size: 13.33px;
   font-weight: normal;
   line-height: 1;
@@ -3944,7 +3945,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 1px;
 }
 .input-group-addon.input-lg {
-  padding: 8px 12px;
+  padding: 6px 12px;
   font-size: 17px;
   border-radius: 3px;
 }
@@ -4751,7 +4752,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 4px 12px;
+  padding: 4px 8px;
   line-height: 1.5003751;
   text-decoration: none;
   color: #a68502;
@@ -4804,9 +4805,9 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 8px 12px;
+  padding: 6px 12px;
   font-size: 17px;
-  line-height: 1.33;
+  line-height: 1.3;
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
@@ -5050,7 +5051,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #595451;
+  color: #433f3d;
 }
 .alert {
   padding: 10px;
@@ -6746,12 +6747,12 @@ button.close {
 .dropdown-menu-item {
   padding: 3px 10px;
   border-bottom: 1px solid #ebeaea;
-  color: #595451;
+  color: #433f3d;
   min-width: 480px;
 }
 .dropdown-menu-item:hover {
   text-decoration: none;
-  color: #4c4745;
+  color: #363231;
   background-color: #f9f7f7;
 }
 .dropdown-menu-item div {
@@ -6788,6 +6789,10 @@ input.form-control.required {
   outline: 0 none;
   border: 1px solid #66afe9 !important;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control .select2-container-disabled .select2-choice {
+  background-color: #f9f7f7;
+  border: 1px solid #ebeaea;
 }
 .panel {
   opacity: 0.9;
@@ -6959,7 +6964,7 @@ tr.table-header td {
  */
 .btn-social {
   position: relative;
-  padding-left: 40px;
+  padding-left: 36px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6977,11 +6982,11 @@ tr.table-header td {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .btn-social.btn-lg {
-  padding-left: 49.8px;
+  padding-left: 46.6px;
 }
 .btn-social.btn-lg > :first-child {
-  line-height: 37.8px;
-  width: 37.8px;
+  line-height: 34.6px;
+  width: 34.6px;
   font-size: 1.6em;
 }
 .btn-social.btn-sm {
@@ -7002,7 +7007,7 @@ tr.table-header td {
 }
 .btn-social-icon {
   position: relative;
-  padding-left: 40px;
+  padding-left: 36px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7023,11 +7028,11 @@ tr.table-header td {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 .btn-social-icon.btn-lg {
-  padding-left: 49.8px;
+  padding-left: 46.6px;
 }
 .btn-social-icon.btn-lg > :first-child {
-  line-height: 37.8px;
-  width: 37.8px;
+  line-height: 34.6px;
+  width: 34.6px;
   font-size: 1.6em;
 }
 .btn-social-icon.btn-sm {
@@ -7052,8 +7057,8 @@ tr.table-header td {
   width: 100%!important;
 }
 .btn-social-icon.btn-lg {
-  height: 37.8px;
-  width: 37.8px;
+  height: 34.6px;
+  width: 34.6px;
   padding-left: 0;
   padding-right: 0;
 }

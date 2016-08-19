@@ -272,12 +272,18 @@ input.form-control.required {
 	height: 27px !important;
 	// border: none;
 	border: 1px solid transparent !important;
+	// padding-left: 6px;
 }
 .form-control.select2-container-active .select2-choice {
 	outline: 0 none;
 	border: 1px solid #66afe9 !important;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 }
+.form-control .select2-container-disabled .select2-choice {
+    background-color: @input-bg-disabled;
+    border: 1px solid @input-border;
+}
+
 
 // Panel 
 .panel {
