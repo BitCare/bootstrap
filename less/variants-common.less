@@ -51,6 +51,8 @@
 	color: @btn-primary-bg;
 }
 
+.description {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
 // Loader
 .loader-background {
     background: none repeat scroll 0 0 white;
@@ -186,6 +188,14 @@
 // .navbar a.has-fa {padding: 3px 6px;}
 // .navbar .fa {font-size: 20px; vertical-align: middle;}
  
+
+.nav-centered {
+	text-align: center;
+	li {
+		float: none; display: inline-block;
+	}
+}
+
 .navbar-filter
 {
     background-color: @brand-lightest;
@@ -211,6 +221,44 @@
 //     min-height: 0;
 // }
 
+// Drop down
+.dropdown-menu-header {
+	border-bottom: 1px solid @dropdown-divider-bg;
+}
+.dropdown-menu-item {
+    padding: 3px 10px;
+    border-bottom: 1px solid @dropdown-divider-bg;
+    color: @dropdown-link-color;
+    min-width: 480px;
+    &:hover {
+	    text-decoration: none;
+	    color: @dropdown-link-hover-color;
+	    background-color: @dropdown-link-hover-bg;
+    }
+    div {
+    	overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+    	a {
+    		// color: @dropdown-link-color;
+    		font-weight: bold;
+    	}
+    }
+}
+// .dropdown-menu-item div {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+// .dropdown-menu-item div a {font-weight: bold;}
+.dropdown-menu-footer {
+	padding-top: 3px;
+}
+// .dropdown-menu-item:hover {
+//     color: #5e5e5e;
+//     background-color: #f5f5f5;
+// }
+
+// Media
+// Must be done for dropdowns covering the media object (e.g. company page)
+.media, .media-body {overflow: unset;}
+
+// Lists
+dl.dl-horizontal dd.separator {height: 5px; margin:2px 0; border-bottom: 1px solid @brand-lighter;}
 
 // Forms
 input.form-control.required {
@@ -248,10 +296,17 @@ input.form-control.required {
 .page-subtitle {
 	background-color: @brand-lightest; border-bottom: 1px solid @brand-lighter; 
 	height: (floor(@font-size-small) + (@padding-small-vertical * 2));
-
   // height: (floor(@font-size * @line-height) + (@padding-vertical * 2) + 2);   // Fix web-kit
-
 }
+
+.page-heading {
+	.media-heading {
+        .btn-group {
+        	margin-top: -5px;
+        }
+    }
+}
+
 
 /* Option button for pencil, etc.. */
 .btn-option {
@@ -284,39 +339,16 @@ img.thumb-medium {border: 1px solid @brand-lighter; padding: 0;width: 90px;heigh
 img.thumb-small {border: 1px solid @brand-lighter; padding: 0; width: 60px;height: 60px;}
 img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height: 40px;}
 
-
-// Identities 
-// .identity-buttons {margin: 15px auto; width: 220px;}
-// .identity-buttons a { width: 220px; height: 40px; margin: 5px 0; background-image: url('/static/styles/images/login-buttons.png'); cursor: pointer; display: inline-block;}
-// .identity-buttons a.google     {background-position: -40px 0;}         .identity-buttons a.google:hover       {background-position: -260px 0;}
-// .identity-buttons a.facebook   {background-position: -40px -40px;}     .identity-buttons a.facebook:hover     {background-position: -260px -40px;}
-// .identity-buttons a.microsoft  {background-position: -40px -80px;}     .identity-buttons a.microsoft:hover    {background-position: -260px -80px;}
-// .identity-buttons a.exact      {background-position: -40px -120px;}    .identity-buttons a.exact:hover        {background-position: -260px -120px;}
-// .identity-buttons a.bitcare    {background-position: -40px -160px;}    .identity-buttons a.bitcare:hover      {background-position: -260px -160px;}
-// .identity-buttons a.humanwave  {background-position: -40px -200px;}    .identity-buttons a.humanwave:hover    {background-position: -260px -200px;}
-// .identity-buttons a.gmail      {background-position: -40px -240px;}    .identity-buttons a.gmail:hover        {background-position: -260px -240px;}
-
-// .identity-icon {width: 62px; height: 62px; background-image: url('/static/styles/images/login-buttons.png'); border-radius: 2px; border: 1px solid darken(@gray-lighter, 7%)}
-// .identity-icon.google 		{background-position: -622px -4px;}
-// .identity-icon.facebook 	{background-position: -690px -5px;}
-// .identity-icon.microsoft 	{background-position: -622px -70px;}
-// .identity-icon.exact 		{background-position: -690px -70px;}
-// .identity-icon.bitcare 		{background-position: -623px -136px;}
-// .identity-icon.humanwave 	{background-position: -690px -136px;}
-// .identity-icon.gmail 		{background-position: -622px -201px;}
-
 // Signup 
 .signup .signup-container {min-height: 430px;}
 .signup .signup-image-container {margin: 20px auto; max-width: 500px;}
-// .signup p {font-size: 120%; font-weight: 300}
-// .signup ul li {font-size: 120%; font-weight: 300;}
-// .signup ul.signup-icon-list li { margin-left: 1.5em; margin-bottom: 0.5em;}
-// .signup ul.signup-icon-list li span.glyphicon { margin-left: -1.5em; float: left; font-size: 110%;}
-// .signup ul.signup-quotes li {margin-bottom: 20px;}
 
 // Table
 .table-clean {width: 100%;}
 .table-clean tr.table-header td {padding-top:10px;}
+
+tr.table-header td {padding-top:10px;}
+
 
 // Section
 .section {
@@ -341,7 +373,7 @@ img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height:
 .card {
 	margin: 10px 0;
 	.card-header {
-	    border-bottom: 1px solid @gray-dark;
+	    border-bottom: 1px solid @brand-lighter;
 	    margin-bottom: 5px;
 	    height: 28px;
 	    .h1, .h2, .h3, .h4 {
@@ -351,7 +383,7 @@ img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height:
 	}
 	.card-separator {
 		height: 5px; 
-		border-bottom: 1px solid @gray-dark;
+		border-bottom: 1px solid @brand-lighter;
 	}
 	.card-footer {
 
@@ -361,7 +393,7 @@ img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height:
 // form
 .form {
     .form-header {
-        border-bottom: 1px solid @gray-dark;
+        border-bottom: 1px solid @brand-lighter;
         margin-bottom: 5px;;
         height: 28px;
 	    .h1, .h2, .h3, .h4 {
@@ -370,7 +402,7 @@ img.thumb-tiny {border: 1px solid @brand-lighter; padding: 0;width: 40px;height:
 	    }
     }
     .form-separator {
-        border-bottom: 1px solid @gray-dark;
+        border-bottom: 1px solid @brand-lighter;
         margin-bottom: 10px;
     }
 }

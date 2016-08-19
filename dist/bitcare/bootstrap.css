@@ -3593,13 +3593,13 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.5003751;
-  color: #a1a1a1;
+  color: #333333;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #949494;
+  color: #262626;
   background-color: #e8f5f8;
 }
 .dropdown-menu > .active > a,
@@ -6590,6 +6590,12 @@ button.close {
 .color-button-primary {
   color: #009ab5;
 }
+.description {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .loader-background {
   background: none repeat scroll 0 0 white;
   bottom: 0;
@@ -6709,6 +6715,13 @@ button.close {
 .navbar-nav.navbar-right:last-child {
   margin-right: 0 !important;
 }
+.nav-centered {
+  text-align: center;
+}
+.nav-centered li {
+  float: none;
+  display: inline-block;
+}
 .navbar-filter {
   background-color: #e8f5f8;
   border: 1px solid #c4e7ee;
@@ -6727,6 +6740,40 @@ button.close {
   .navbar-filter .navbar-collapse {
     padding: 0;
   }
+}
+.dropdown-menu-header {
+  border-bottom: 1px solid #e6e6e6;
+}
+.dropdown-menu-item {
+  padding: 3px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #333333;
+  min-width: 480px;
+}
+.dropdown-menu-item:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #e8f5f8;
+}
+.dropdown-menu-item div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dropdown-menu-item div a {
+  font-weight: bold;
+}
+.dropdown-menu-footer {
+  padding-top: 3px;
+}
+.media,
+.media-body {
+  overflow: unset;
+}
+dl.dl-horizontal dd.separator {
+  height: 5px;
+  margin: 2px 0;
+  border-bottom: 1px solid #c4e7ee;
 }
 input.form-control.required {
   background-position: right 2px !important;
@@ -6757,6 +6804,9 @@ input.form-control.required {
   background-color: #e8f5f8;
   border-bottom: 1px solid #c4e7ee;
   height: 18px;
+}
+.page-heading .media-heading .btn-group {
+  margin-top: -5px;
 }
 /* Option button for pencil, etc.. */
 .btn-option {
@@ -6820,6 +6870,9 @@ img.thumb-tiny {
 .table-clean tr.table-header td {
   padding-top: 10px;
 }
+tr.table-header td {
+  padding-top: 10px;
+}
 .section .section-header {
   height: 28px;
 }
@@ -6839,7 +6892,7 @@ img.thumb-tiny {
   margin: 10px 0;
 }
 .card .card-header {
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #c4e7ee;
   margin-bottom: 5px;
   height: 28px;
 }
@@ -6852,10 +6905,10 @@ img.thumb-tiny {
 }
 .card .card-separator {
   height: 5px;
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #c4e7ee;
 }
 .form .form-header {
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #c4e7ee;
   margin-bottom: 5px;
   height: 28px;
 }
@@ -6867,7 +6920,7 @@ img.thumb-tiny {
   margin: 0;
 }
 .form .form-separator {
-  border-bottom: 1px solid #a1a1a1;
+  border-bottom: 1px solid #c4e7ee;
   margin-bottom: 10px;
 }
 .show-hide-bar {
