@@ -6709,7 +6709,7 @@ button.close {
   padding: 3px 6px;
 }
 .navbar .fa {
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: middle;
 }
 .navbar-nav.navbar-right:last-child {
@@ -6926,6 +6926,11 @@ tr.table-header td {
 .form .form-separator {
   border-bottom: 1px solid #ebeaea;
   margin-bottom: 10px;
+}
+.tab-bar {
+  border-bottom: 1px solid #ebeaea;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 .show-hide-bar {
   background-color: #f9f7f7;

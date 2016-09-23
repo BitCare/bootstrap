@@ -6741,7 +6741,7 @@ button.close {
   padding: 3px 6px;
 }
 .navbar .fa {
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: middle;
 }
 .navbar-nav.navbar-right:last-child {
@@ -6958,6 +6958,11 @@ tr.table-header td {
 }
 .form .form-separator {
   margin-bottom: 10px;
+  border-bottom: 1px solid #c4e7ee;
+}
+.tab-bar {
+  padding-bottom: 2px;
+  margin-bottom: 5px;
   border-bottom: 1px solid #c4e7ee;
 }
 .show-hide-bar {
