@@ -4899,11 +4899,11 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #ebeaea;
+  background-color: #595451;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #d2d0d0;
+  background-color: #3e3b39;
 }
 .label-primary {
   background-color: #595451;
@@ -6709,7 +6709,7 @@ button.close {
   padding: 3px 6px;
 }
 .navbar .fa {
-  font-size: 14px;
+  font-size: 16px;
   vertical-align: middle;
 }
 .navbar-nav.navbar-right:last-child {
@@ -6893,7 +6893,7 @@ tr.table-header td {
   }
 }
 .card {
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 .card .card-header {
   border-bottom: 1px solid #ebeaea;
