@@ -1551,7 +1551,7 @@ pre {
   line-height: 1.5003751;
   word-break: break-all;
   word-wrap: break-word;
-  color: #595451;
+  color: #959190;
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -2488,7 +2488,7 @@ legend {
   margin-bottom: 10px;
   font-size: 16.6625px;
   line-height: inherit;
-  color: #595451;
+  color: #959190;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -4899,11 +4899,11 @@ a.label:focus {
   top: -1px;
 }
 .label-default {
-  background-color: #595451;
+  background-color: #959190;
 }
 .label-default[href]:hover,
 .label-default[href]:focus {
-  background-color: #3e3b39;
+  background-color: #7c7776;
 }
 .label-primary {
   background-color: #595451;
@@ -6558,7 +6558,7 @@ button.close {
   background-color: #433f3d;
 }
 .bg-gray-dark {
-  background-color: #595451;
+  background-color: #959190;
 }
 .bg-gray {
   background-color: #afadac;
@@ -6573,7 +6573,7 @@ button.close {
   color: #595451;
 }
 .color-secondary {
-  color: #595451;
+  color: #959190;
 }
 .color-success {
   color: #689d33;
@@ -6819,7 +6819,7 @@ input.form-control.required {
   width: 24px;
   padding: 0;
   background-color: #ffffff;
-  color: #595451;
+  color: #959190;
   border-color: #ffffff;
 }
 .btn-option:hover {
