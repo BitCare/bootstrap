@@ -2678,10 +2678,10 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   margin-bottom: 0;
-  min-height: 33.33px;
+  min-height: 28px;
 }
 .form-control-static.input-lg,
 .form-control-static.input-sm {
