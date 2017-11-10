@@ -5864,8 +5864,10 @@ button.close {
 .splash-header h1 {
   float: left;
   width: 300px;
-  margin: 0;
-  background: url("images/artwork.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  margin: 10px;
+  background: url("images/logo.svg") no-repeat;
+  -webkit-background-size: 300px 300px;
+          background-size: 300px;
 }
 .splash-header h1 a {
   display: block;
@@ -5886,7 +5888,7 @@ button.close {
   float: left;
   width: 300px;
   margin: 0;
-  background: url("images/artwork.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("images/logo.svg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 .splash-header-light h1 a {
   display: block;
