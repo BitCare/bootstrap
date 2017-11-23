@@ -324,7 +324,7 @@ module.exports = function (grunt) {
         expand: true,
         cwd: './dist',
         src: ['bitcare/*.css', 'humanwave/*.css'],
-        dest: '../blixem/static/brand'
+        dest: '../blixem/web/css/brand'
       },
       blixem_js: {
         expand: true,
@@ -528,7 +528,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
 
   // Blixem distribution
-  grunt.registerTask('blixem', ['dist', 'copy:blixem', 'copy:blixem_js']);
+  grunt.registerTask('blixem', ['dist', 'copy:blixem']);
+  // grunt.registerTask('blixem', ['dist', 'copy:blixem', 'copy:blixem_js']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
