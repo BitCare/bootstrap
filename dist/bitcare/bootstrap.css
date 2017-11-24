@@ -6154,7 +6154,7 @@ tr.table-header td {
   color: #fff;
 }
 .navbar .navbar-brand a {
-  background: url('/static/brand/bitcare/images/logo.svg') no-repeat scroll 0px 3px transparent;
+  background: url('images/logo.svg') no-repeat scroll 0px 3px transparent;
 }
 /*
  * Social Buttons for Bootstrap

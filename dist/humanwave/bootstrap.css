@@ -6154,7 +6154,7 @@ tr.table-header td {
   color: #fad64c;
 }
 .navbar .navbar-brand a {
-  background: url('/static/brand/humanwave/images/logo.svg') no-repeat scroll 0px 5px transparent;
+  background: url('images/logo.svg') no-repeat scroll 0px 5px transparent;
   width: 130px !important;
 }
 /*
