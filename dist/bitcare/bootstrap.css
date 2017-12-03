@@ -5903,12 +5903,12 @@ button.close {
     width: 120px;
   }
 }
-.navbar a .has-fa {
-  padding: 3px 6px;
-}
 .navbar .fa {
   font-size: 16px;
   vertical-align: middle;
+}
+.has-fa {
+  padding: 4px 7px 6px 7px !important;
 }
 .navbar-nav.navbar-right:last-child {
   margin-right: 0 !important;
@@ -6154,7 +6154,7 @@ tr.table-header td {
   color: #fff;
 }
 .navbar .navbar-brand a {
-  background: url('images/logo.svg') no-repeat scroll 0px 3px transparent;
+  background: url('images/logo.svg') no-repeat scroll 0px 4px transparent;
 }
 /*
  * Social Buttons for Bootstrap

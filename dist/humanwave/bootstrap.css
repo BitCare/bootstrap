@@ -5903,12 +5903,12 @@ button.close {
     width: 120px;
   }
 }
-.navbar a .has-fa {
-  padding: 3px 6px;
-}
 .navbar .fa {
   font-size: 16px;
   vertical-align: middle;
+}
+.has-fa {
+  padding: 4px 7px 6px 7px !important;
 }
 .navbar-nav.navbar-right:last-child {
   margin-right: 0 !important;
