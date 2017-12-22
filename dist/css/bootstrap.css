@@ -5796,6 +5796,21 @@ button.close {
 .bg-gray-lighter {
   background-color: #eee;
 }
+.border-gray-darker {
+  border-color: #222;
+}
+.border-gray-dark {
+  border-color: #333;
+}
+.border-gray {
+  border-color: #555;
+}
+.border-gray-light {
+  border-color: #777;
+}
+.border-gray-lighter {
+  border-color: #eee;
+}
 .color-primary {
   color: #337ab7;
 }

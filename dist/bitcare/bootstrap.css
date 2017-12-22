@@ -5766,6 +5766,21 @@ button.close {
 .bg-gray-lighter {
   background-color: #f2f2f2;
 }
+.border-gray-darker {
+  border-color: #333333;
+}
+.border-gray-dark {
+  border-color: #a1a1a1;
+}
+.border-gray {
+  border-color: #cacaca;
+}
+.border-gray-light {
+  border-color: #e6e6e6;
+}
+.border-gray-lighter {
+  border-color: #f2f2f2;
+}
 .color-primary {
   color: #148195;
 }
